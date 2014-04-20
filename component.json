@@ -7,8 +7,7 @@
     "size",
     "height",
     "scroll",
-    "client-side",
-    "browser"
+    "vertical"
   ],
   "repo": "shinnn/get-scrollmax-y.js",
   "main": "dist/get-scrollmax-y.js",

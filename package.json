@@ -30,6 +30,7 @@
     "size",
     "height",
     "scroll",
+    "vertical",
     "client-side",
     "browser"
   ],
