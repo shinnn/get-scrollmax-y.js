@@ -1,0 +1,34 @@
+{
+  "name": "get-scrollmax-y",
+  "version": "0.1.0",
+  "description": "Get the value equivalent to window.scrollMaxY",
+  "keywords": [
+    "window",
+    "size",
+    "height",
+    "scroll"
+  ],
+  "main": "dist/get-scrollmax-y.js",
+  "homepage": "https://github.com/shinnn/get-scrollmax-y.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/get-scrollmax-y.js.git"
+  },
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "email": "snnskwtnb@gmail.com",
+      "url": "https://github.com/shinnn"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src",
+    "test.js",
+    "gulpfile.js",
+    "package.json",
+    "component.json"
+  ]
+}
