@@ -30,7 +30,13 @@ if (typeof window.scrollMaxY === 'number') {
     getInnerHeight = function()  {return html.clientHeight || body.clientHeight};
   }
 
-  var getScrollHeight = function()  {return Math.max(body.scrollHeight, body.offsetHeight)};
+  var getScrollHeight = function()  {return Math.max(
+    body.scrollHeight,
+    body.offsetHeight,
+    html.clientHeight,
+    html.scrollHeight,
+    html.offsetHeight
+  )};
 
   getScrollMaxY = function()  {return getScrollHeight() - getInnerHeight()};
 }

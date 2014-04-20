@@ -15,7 +15,13 @@ if (typeof window.scrollMaxY === 'number') {
     getInnerHeight = () => html.clientHeight || body.clientHeight;
   }
 
-  let getScrollHeight = () => Math.max(body.scrollHeight, body.offsetHeight);
+  let getScrollHeight = () => Math.max(
+    body.scrollHeight,
+    body.offsetHeight,
+    html.clientHeight,
+    html.scrollHeight,
+    html.offsetHeight
+  );
 
   getScrollMaxY = () => getScrollHeight() - getInnerHeight();
 }
