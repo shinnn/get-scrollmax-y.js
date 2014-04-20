@@ -10,7 +10,7 @@ var funName = 'getScrollMaxY';
 
 var banner = [
   '/*!',
-  ' * <%= pkg.name %> | MIT (c) Shinnosuke Watanabe',
+  ' * <%= pkg.name %>.js | MIT (c) Shinnosuke Watanabe',
   ' * <%= pkg.homepage %>',
   '*/\n'
 ].join('\n');
@@ -33,8 +33,7 @@ gulp.task('transpile', function() {
     }))
     .pipe($.header(banner, {pkg: pkg}))
     .pipe($.rename({
-      basename: pkg.name,
-      extname: ''
+      basename: pkg.name
     }))
     .pipe(gulp.dest('dist'));
 });

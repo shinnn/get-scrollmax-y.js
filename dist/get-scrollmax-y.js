@@ -34,8 +34,7 @@ if (typeof window.scrollMaxY === 'number') {
     body.scrollHeight,
     body.offsetHeight,
     html.clientHeight,
-    html.scrollHeight,
-    html.offsetHeight
+    html.scrollHeight
   )};
 
   getScrollMaxY = function()  {return getScrollHeight() - getInnerHeight()};

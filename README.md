@@ -1,13 +1,13 @@
 # get-scrollmax-y.js
 
-[![Bower version](https://badge.fury.io/bo/get-scrollmax-y.js.svg)](http://badge.fury.io/bo/get-scrollmax-y.js)
-[![NPM version](https://badge.fury.io/js/get-scrollmax-y.js.svg)](http://badge.fury.io/js/get-scrollmax-y.js)
+[![Bower version](https://badge.fury.io/bo/get-scrollmax-y.svg)](http://badge.fury.io/bo/get-scrollmax-y)
+[![NPM version](https://badge.fury.io/js/get-scrollmax-y.svg)](http://badge.fury.io/js/get-scrollmax-y)
 [![Build Status](https://travis-ci.org/shinnn/get-scrollmax-y.js.svg?branch=master)](https://travis-ci.org/shinnn/get-scrollmax-y.js)
 [![devDependency Status](https://david-dm.org/shinnn/get-scrollmax-y.js/dev-status.svg)](https://david-dm.org/shinnn/get-scrollmax-y.js#info=devDependencies)
 
 [![browser support](https://ci.testling.com/shinnn/get-scrollmax-y.js.png)](https://ci.testling.com/shinnn/get-scrollmax-y.js)
 
-Cross-browser library to get the value equivalent to [`window.scrollMaxY`](https://developer.mozilla.org/docs/Web/API/window.scrollMaxY).
+Cross-browser library to get the value equivalent to [`window.scrollMaxY`](https://developer.mozilla.org/docs/Web/API/window.scrollMaxY)
 
 ## Installation
 
