@@ -1,6 +1,6 @@
 {
   "name": "get-scrollmax-y",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get the value equivalent to window.scrollMaxY",
   "main": "dist/get-scrollmax-y.js",
   "scripts": {
