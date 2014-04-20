@@ -11,10 +11,16 @@ test('window.scrollMaxY', function(t) {
 
   t.plan(2);
 
-  t.equal(getScrollMaxY(), 0);
+  t.ok(
+    getScrollMaxY() === 0,
+    'should return 0 when the content is enough small.'
+  );
 
   body.style.height = '500px';
   var _s = getScrollMaxY();
-  body.style.height = 500 + 1 + - _s + 'px';
-  t.equal(getScrollMaxY(), 1);
+  body.style.height = parseInt(body.style.height, 10) + 1 + - _s + 'px';
+  t.ok(
+    getScrollMaxY() === 1,
+    'should return scrollable height of current page.'
+  );
 });
