@@ -4,7 +4,8 @@
   "description": "Get the value equivalent to window.scrollMaxY",
   "main": "dist/get-scrollmax-y.js",
   "scripts": {
-    "test": "gulp build"
+    "build": "gulp build",
+    "test": "npm run-script build && testling"
   },
   "author": {
     "name": "Shinnosuke Watanabe",
@@ -31,11 +32,12 @@
     "height",
     "scroll",
     "vertical",
+    "cross-browser",
     "client-side",
     "browser"
   ],
   "devDependencies": {
-    "gulp": "^3.6.0",
+    "gulp": "^3.6.1",
     "gulp-es6-transpiler": "^0.1.2",
     "gulp-header": "^1.0.2",
     "gulp-jshint": "^1.5.3",

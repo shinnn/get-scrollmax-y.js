@@ -1,13 +1,14 @@
 {
   "name": "get-scrollmax-y",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Get the value equivalent to window.scrollMaxY",
   "keywords": [
     "window",
     "size",
     "height",
     "scroll",
-    "vertical"
+    "vertical",
+    "cross-browser"
   ],
   "main": "dist/get-scrollmax-y.js",
   "homepage": "https://github.com/shinnn/get-scrollmax-y.js",
