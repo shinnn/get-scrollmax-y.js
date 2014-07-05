@@ -1,6 +1,13 @@
 {
+  "bitwise": true,
   "camelcase": true,
   "eqeqeq": true,
+  "curly": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "regexp": true,
   "strict": true,
   "indent": 2,
   "quotmark": "single",
