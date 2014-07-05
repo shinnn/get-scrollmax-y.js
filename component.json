@@ -1,6 +1,6 @@
 {
   "name": "get-scrollmax-y.js",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Get the value equivalent to window.scrollMaxY",
   "keywords": [
     "window",
@@ -11,9 +11,9 @@
     "cross-browser"
   ],
   "repo": "shinnn/get-scrollmax-y.js",
-  "main": "dist/get-scrollmax-y.js",
+  "main": "dist/get-scrollmax-y-cjs.js",
   "scripts": [
-    "dist/get-scrollmax-y.js"
+    "dist/get-scrollmax-y-cjs.js"
   ],
   "license": "MIT"
 }

@@ -2,7 +2,7 @@
   "name": "get-scrollmax-y",
   "version": "0.2.2",
   "description": "Get the value equivalent to window.scrollMaxY",
-  "main": "dist/get-scrollmax-y.js",
+  "main": "dist/get-scrollmax-y-cjs.js",
   "scripts": {
     "build": "gulp build",
     "test": "npm run-script build && testling"
@@ -30,6 +30,7 @@
     "window",
     "size",
     "height",
+    "max",
     "scroll",
     "vertical",
     "cross-browser",
@@ -37,18 +38,21 @@
     "browser"
   ],
   "devDependencies": {
-    "browserify": "^4.1.8",
-    "gulp": "^3.7.0",
-    "gulp-es6-transpiler": "^0.1.3",
+    "browserify": "^4.2.0",
+    "gulp": "^3.8.5",
+    "gulp-es6-transpiler": "^0.1.4",
+    "gulp-footer": "^1.0.4",
     "gulp-header": "^1.0.2",
-    "gulp-jshint": "^1.6.2",
+    "gulp-jshint": "^1.6.4",
     "gulp-jsonlint": "0.0.3",
-    "gulp-load-plugins": "^0.5.1",
+    "gulp-load-plugins": "^0.5.3",
     "gulp-rename": "^1.2.0",
     "gulp-wrap-umd": "^0.2.0",
     "jshint-stylish": "^0.2.0",
-    "tape": "^2.13.2",
-    "testling": "^1.6.1"
+    "merge-stream": "^0.1.2",
+    "rimraf": "^2.2.8",
+    "tape": "^2.13.3",
+    "testling": "^1.7.0"
   },
   "testling": {
     "files": "test.js",

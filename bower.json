@@ -1,11 +1,12 @@
 {
   "name": "get-scrollmax-y",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Get the value equivalent to window.scrollMaxY",
   "keywords": [
     "window",
     "size",
     "height",
+    "max",
     "scroll",
     "vertical",
     "cross-browser"
@@ -28,8 +29,9 @@
     "**/.*",
     "node_modules",
     "src",
-    "test.js",
+    "dist/get-scrollmax-y-cjs.js",
     "gulpfile.js",
+    "test.js",
     "package.json",
     "component.json"
   ]
