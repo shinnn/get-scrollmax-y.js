@@ -24,7 +24,7 @@ test('window.scrollMaxY', function(t) {
     _s > 0,
     'should return positive value when the content is enough large.'
   );
-  
+
   body.style.height = parseInt(body.style.height, 10) + 1 + - _s + 'px';
   t.equal(
     getScrollMaxY(),
