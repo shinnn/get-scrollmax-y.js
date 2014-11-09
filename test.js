@@ -1,5 +1,5 @@
 var test = require('tape');
-var getScrollMaxY = require('./dist/get-scrollmax-y.js');
+var getScrollMaxY = require('./dist/get-scrollmax-y-cjs.js');
 
 var body = document.body;
 body.style.margin = '0';

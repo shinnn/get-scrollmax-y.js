@@ -20,6 +20,7 @@ var banner = [
 
 gulp.task('lint', function() {
   gulp.src('{,src/}*.js')
+    .pipe($.jscs({esnext: true}))
     .pipe($.jshint())
     .pipe($.jshint.reporter(stylish));
   gulp.src('*.json')
@@ -31,21 +32,24 @@ gulp.task('clean', rimraf.bind(null, 'dist'));
 
 gulp.task('transpile', ['clean'], function() {
   return mergeStream(
-    gulp.src(['src/*.js'])
+    gulp.src('src/*.js')
       .pipe($.es6Transpiler())
-      .pipe($.wrapUmd({
-        exports: funName,
-        namespace: funName,
-        deps: []
-      }))
-      .pipe($.header(banner, {pkg: pkg}))
+      .pipe($.header(banner + '!function() {\n', {pkg: pkg}))
+      .pipe($.footer('\nwindow.' + funName + ' = ' + funName + ';\n}();\n'))
       .pipe($.rename(bower.main))
       .pipe(gulp.dest('')),
-    gulp.src(['src/*.js'])
+    gulp.src('src/*.js')
       .pipe($.es6Transpiler())
-      .pipe($.footer('\nmodule.exports = <%= funName %>;\n', {funName: funName}))
+      .pipe($.footer('\nmodule.exports = ' + funName + ';\n'))
       .pipe($.header(banner, {pkg: pkg}))
       .pipe($.rename(pkg.main))
+      .pipe(gulp.dest('')),
+    gulp.src('src/*.js')
+      .pipe($.es6Transpiler())
+      .pipe($.wrapAmd({exports: funName}))
+      .pipe($.header(banner, {pkg: pkg}))
+      .pipe($.rename(bower.main))
+      .pipe($.rename({suffix: '-amd'}))
       .pipe(gulp.dest(''))
   );
 });

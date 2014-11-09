@@ -2,7 +2,8 @@
  * get-scrollmax-y.js | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/get-scrollmax-y.js
 */
-!function() {
+define(function(require,exports,module){
+
 'use strict';
 
 var getScrollMaxY;
@@ -30,5 +31,6 @@ if (typeof window.scrollMaxY === 'number') {
   getScrollMaxY = function()  {return getScrollHeight() - getInnerHeight()};
 }
 
-window.getScrollMaxY = getScrollMaxY;
-}();
+return getScrollMaxY;
+
+});

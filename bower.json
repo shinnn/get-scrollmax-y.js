@@ -1,6 +1,5 @@
 {
   "name": "get-scrollmax-y",
-  "version": "0.3.0",
   "description": "Get the value equivalent to window.scrollMaxY",
   "keywords": [
     "window",
@@ -30,6 +29,7 @@
     "node_modules",
     "src",
     "dist/get-scrollmax-y-cjs.js",
+    "dist/get-scrollmax-y-amd.js",
     "gulpfile.js",
     "test.js",
     "package.json",
