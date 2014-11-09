@@ -15,13 +15,13 @@ Cross-browser library to get the value equivalent to [`window.scrollMaxY`](https
 
 #### [Bower](http://bower.io/)
 
-```
+```sh
 bower i --save get-scrollmax-y
 ```
 
 #### [npm](https://www.npmjs.org/)
 
-```
+```sh
 npm i --save get-scrollmax-y
 ```
 
@@ -34,6 +34,11 @@ var getScrollMaxY = require('shinnn/get-scrollmax-y.js');
 ### Standalone
 
 [Download the script file directly.](https://raw.githubusercontent.com/shinnn/get-scrollmax-y.js/master/dist/get-scrollmax-y.js "view raw")
+
+### [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) support
+
+This repository includes [the AMD-friendly build](https://raw.githubusercontent.com/shinnn/get-scrollmax-y.js/master/dist/get-scrollmax-y-amd.js) but the package managers doesn't include it. If you want to use it, download it directly.
+
 
 ## API
 
